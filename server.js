@@ -15,7 +15,7 @@ app.use(express.json());
 app.use('/uploads', express.static(path.join(__dirname, 'uploads')));
 
 // MongoDB Connection - REMOVED deprecated options
-mongoose.connect(process.env.MONGODB_URI || 'mongodb://127.0.0.1:27017/devam-events')
+mongoose.connect(process.env.MONGODB_URI || 'mongodb+srv://utsav:0001@cluster0.uynmjzf.mongodb.net/?appName=Cluster0')
 .then(() => console.log('✅ MongoDB Connected'))
 .catch(err => console.error('❌ MongoDB Error:', err));
 
